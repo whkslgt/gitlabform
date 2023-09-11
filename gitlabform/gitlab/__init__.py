@@ -25,6 +25,7 @@ from gitlabform.gitlab.schedules import GitLabPipelineSchedules
 from gitlabform.gitlab.integrations import GitLabIntegrations
 from gitlabform.gitlab.tags import GitLabTags
 from gitlabform.gitlab.users import GitLabUsers
+from gitlabform.gitlab.job_token_scopes import GitLabJobTokenScope
 
 
 @enum.unique
@@ -72,5 +73,6 @@ class GitLab(
     GitLabProjectProtectedEnvironments,
     GitLabProjectMergeRequestsApprovals,
     GitLabVariables,
+    GitLabJobTokenScope,
 ):
     pass

@@ -43,8 +43,8 @@ from gitlabform.processors.project.merge_requests_approval_rules import (
 from gitlabform.processors.project.merge_requests_approvals import (
     MergeRequestsApprovals,
 )
-from gitlabform.processors.project.job_token_scopes_processor import (
-    JobTokenScopesProcessor,
+from gitlabform.processors.project.job_token_scope_processor import (
+    JobTokenScopeProcessor,
 )
 
 
@@ -69,5 +69,5 @@ class ProjectProcessors(AbstractProcessors):
             ProtectedEnvironmentsProcessor(gitlab),
             MergeRequestsApprovals(gitlab),
             MergeRequestsApprovalRules(gitlab),
-            JobTokenScopesProcessor(),
+            JobTokenScopeProcessor(gitlab, config, strict),
         ]

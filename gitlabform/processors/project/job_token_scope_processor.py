@@ -3,7 +3,7 @@ from gitlabform.gitlab import GitLab
 from gitlabform.processors.single_entity_processor import SingleEntityProcessor
 
 
-class JobTokenScopesProcessor(SingleEntityProcessor):
+class JobTokenScopeProcessor(SingleEntityProcessor):
     def __init__(self, gitlab: GitLab, config: Configuration, strict: bool):
         super().__init__(
             configuration_name="inbound_job_token_scope",

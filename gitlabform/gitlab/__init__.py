@@ -25,7 +25,7 @@ from gitlabform.gitlab.schedules import GitLabPipelineSchedules
 from gitlabform.gitlab.integrations import GitLabIntegrations
 from gitlabform.gitlab.tags import GitLabTags
 from gitlabform.gitlab.users import GitLabUsers
-from gitlabform.gitlab.job_token_scopes import GitLabJobTokenScope
+from gitlabform.gitlab.job_token_scope import GitLabJobTokenScope
 
 
 @enum.unique
